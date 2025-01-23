@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Forecast</h1>
+        </header>
+        <main>
+            <div class="search-bar">
+                <input type="text" id="location-input" placeholder="Enter City">
+                <button onclick="getWeather()">Get Weather</button>
+            </div>
+            <div id="weather-info">
+                <div class="current-weather">
+                    <div id="location"></div>
+                    <div id="temperature"></div>
+                    <div id="description"></div>
+                    <div id="icon"></div>
+                </div>
+                <div class="weather-details">
+                    <div>
+                        <span>Wind:</span>
+                        <span id="wind"></span>
+                    </div>
+                    <div>
+                        <span>Humidity:</span>
+                        <span id="humidity"></span>
+                    </div>
+                </div>
+                <div id="chart-container"></div> 
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
